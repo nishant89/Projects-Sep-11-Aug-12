@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Taj Hotels Home Page</title>
+<script type="text/javascript">
+function SendValue(txt)
+{
+document.getElementById("hidden1").value=txt;
+document.getElementById("frm").submit();
+}
+</script>
+</head>
+<a style="color:#FFFFFF"  href="AddSpecialCustomer.jsp">Add SpecialCustomer</a>
+<body background="HotelFront.jpg">
+<h1 align="center" style = "font-color:white;"><font color="white">Taj Group of Hotels</font></h1>
+<form id='frm'  method="GET"
+action="Display">
+<br><br>
+<center><input type="button" name="HotelViewButton" value="HotelView" style="height: 40px; width: 120px" id="HotelView" onclick="SendValue('HotelView')"/></center>
+<input type="button" value="Hotels" style="height: 25px; width: 120px" id="Hotels" onclick="SendValue('Hotel')"/><br><br>
+<input type="button" value="Rooms" style="height: 25px; width: 120px" id="Casino" onclick="SendValue('Has_Room')"/><br><br>
+<input type="button" value="Shops" style="height: 25px; width: 120px" id="Shop" onclick="SendValue('Shop')"/><br><br>
+<input type="button" value="Restaurants" style="height: 25px; width: 120px" id="Restaurant" onclick="SendValue('Restaurant')"/><br><br>
+<input type="button" value="Casinos" style="height: 25px; width: 120px" id="Casino" onclick="SendValue('Casino')"/><br><br>
+<input type="button" value="Casino Games" style="height: 25px; width: 120px" id="Games" onclick="SendValue('Games')"/><br><br>
+<input type="button" value="Specialcustomers" style="height: 25px; width: 120px" id="SpecialCustomer" onclick="SendValue('SpecialCustomer')"/><br><br>
+<input type="button" value="NightClubs" style="height: 25px; width: 120px" id="Casino" onclick="SendValue('NightClub')"/><br><br>
+<input type="button" value="Shows" style="height: 25px; width: 120px" id="Casino" onclick="SendValue('Shows')"/><br><br>
+<input type="button" value="SPA" style="height: 25px; width: 120px" id="Casino" onclick="SendValue('SPA')"/><br><br>
+<input type="button" value="Employee" style="height: 25px; width: 120px" id="Casino" onclick="SendValue('Employee')"/><br><br>
+<input type="hidden" name="TableName" id="hidden1" value="default"/>
+</form>
+</body>
+</html>
